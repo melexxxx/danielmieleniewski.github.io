@@ -1,0 +1,446 @@
+/********************************************************
+BODY
+**************************************************/
+
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="5" cy="5" r="5" fill="black" /></svg>') 5 5, auto;
+}
+
+a {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4 h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 2%;
+  font-size: larger;
+  color: #7c7670;
+}
+
+/********************************************************
+BODY END
+**************************************************/
+
+
+
+
+/********************************************************
+TITLE
+**************************************************/
+.navbar {
+  margin-top: 5px;
+  border-radius: 50px;
+  background-color: #a09487;
+  transform: translateX(100%);
+  animation-name: slide-in;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(-50px);
+    animation-timing-function: ease-in;
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateX(0%);
+    animation-timing-function: ease-out;
+    text-transform: unset;
+    opacity: .6;
+  }
+  to {
+    transform: translateX(0%);
+    animation-timing-function: ease-out;
+  }
+}
+
+/********************************************************
+NAVBAR
+**************************************************/
+#navbarSupportedContent:not(.show) {
+  display: none;
+}
+
+
+/********************************************************
+NAVBAR END
+**************************************************/
+
+/********************************************************
+VIDEO STYLING 
+**************************************************/
+
+
+#Typing_Video {
+  filter: blur(3px) opacity(1);
+  opacity: 0.1;
+  position: fixed; /* This fixes the video to the page */
+  right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+  bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+  min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+  z-index: -1; /* This places the video behind the other elements on the page */
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+  #Typing_Video {
+      display: none;
+  }
+}
+
+/********************************************************
+VIDEO STYLING END
+**************************************************/
+
+
+
+
+/********************************************************
+BODY
+**************************************************/
+
+body {
+  background-color: #c6b997b9;
+}
+/********************************************************
+BODY END
+**************************************************/
+
+
+/********************************************************
+MAIN PICTURE AND TEXT TRANSITION
+**************************************************/
+
+
+.main-container {
+    margin-top: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(92, 59, 59, 0.7);
+    border-radius: 100px;
+    opacity: 1;
+
+}
+
+.profile-pic {
+    width: 40%;
+    opacity: 0.6;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(1);
+  }
+
+  .about-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 100px;
+    opacity: 0.2;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(0.9);
+  }
+
+  .profile-pic:hover {
+    z-index: 2;
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+
+  .profile-pic:hover + .about-text {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .about-text:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+
+  .about-text:hover + .profile-pic {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+/********************************************************
+MAIN PICTURE AND TEXT TRANSITION END
+**************************************************/
+
+
+/********************************************************
+SOCIAL MEDIA PANEL
+**************************************************/
+#connect-with-me {
+  padding-top: 270px;
+  color: rgb(157, 157, 157);
+}
+
+
+
+.social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-flexbox;
+    margin-right: 10px;
+    font-size: 80px;
+    color: #686565;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .social-icons:hover {
+    transform: scale(1.1);
+  }
+  
+  
+/********************************************************
+SOCIAL MEDIA PANEL END
+**************************************************/
+
+/********************************************************
+BUTTON
+**************************************************/
+
+
+  
+  #scroll-btn {
+    padding-bottom: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../img/butttonBackground.png);
+    filter: grayscale(80%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px 100px;
+    color: #414141;
+    border: none;
+    border-radius: 9px;
+    margin: 0 auto;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  #scroll-btn:hover {
+    background-color: #0062cc;
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+  
+  /********************************************************
+  BUTTON END
+  **************************************************/
+  
+
+    /********************************************************
+  MY WORK
+  **************************************************/
+
+
+
+  #my-work   {
+    padding-left: 2%;
+    font-size: larger;
+    color: #7c7670;
+  }
+  
+  #my-work p {
+    padding-left: 2%;
+    font-size: larger;
+    color: #7c7670;
+  }
+
+
+  .about-quote p {
+    padding-left: 2%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    position: relative; /* Add position relative to allow absolute positioning of child elements */
+  }
+  
+  .about-quote p .word {
+    border-radius: 10px;
+    padding: 2px;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .about-quote p .research {
+    text-transform: uppercase;
+    color: rgba(56, 79, 62, 0.543);
+    background: linear-gradient(180deg, rgba(56, 79, 62, 0.146) 0%, rgba(56, 79, 62, 0.066) 100%);
+  }
+  
+  .about-quote p .support {
+    text-transform: uppercase;
+    color: rgba(53, 92, 92, 0.549);
+    background: linear-gradient(180deg, rgba(53, 92, 92, 0.133) 0%, rgba(53, 92, 92, 0.07) 100%);
+  }
+  
+  .about-quote p .creation {
+    text-transform: uppercase;
+    color: rgba(89, 71, 117, 0.418);
+    background: linear-gradient(180deg, rgba(89, 71, 117, 0.137) 0%, rgba(89, 71, 117, 0.066) 100%);
+  }
+  
+/* CARD*/
+
+.card {
+  margin: 3%;
+  padding-left: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.2;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  opacity: 1;
+  scale: 1.5;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #0085A1;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #00A7BF;
+}
+
+
+/* CARD END*/
+
+
+/********************************************************
+MY WORK END
+**************************************************/
+
+
+/********************************************************
+CONTACT ME
+**************************************************/
+
+
+#reach-out   {
+  padding-left: 2%;
+  font-size: larger;
+  color: #7c7670;
+}
+
+#reach-out p {
+  padding-left: 2%;
+  font-size: larger;
+  color: #7c7670;
+}
+
+
+.form-floating {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.main-containerTransparent {
+  background-color: transparent;
+  z-index: 2;
+  margin-top: 55px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(92, 59, 59, 0.7);
+  border-radius: 100px;
+  opacity: 1;
+
+}
+
+/* style the input boxes */
+.form-control {
+  border-radius: 10px;
+  background-color: transparent; /* set the background color to transparent */
+  color: rgb(95, 95, 95); /* set the text color to black */
+  border-color: rgb(202, 202, 202); /* set the border color to black */
+}
+
+/* change the opacity and text color when the input box is clicked */
+.form-control:focus {
+  opacity: 0.6;
+  color: rgb(82, 82, 82);
+}
+
+/* style the labels */
+.form-floating label {
+  color: white; /* set the label text color to black */
+}
+
+#submit {
+  background-color: rgb(122, 122, 122);
+  color: rgb(64, 64, 64);
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background-color: rgb(157, 156, 156);
+}
+
+
+
+
+/********************************************************
+CONTACT ME END
+ **************************************************/
+
+
+
+
